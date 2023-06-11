@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero/Hero";
+import SmallTeam from "@/components/HomeAbout/SmallTeam";
 import WelcomeSection from "@/components/WelcomeSection/WelcomeSection";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <WelcomeSection />
+      <SmallTeam />
     </main>
   );
 }

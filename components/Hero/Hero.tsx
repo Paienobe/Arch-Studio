@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage1 from "../../assets/home/mobile/image-hero-paramour.jpg";
+import heroImage1 from "@/assets/home/mobile/image-hero-paramour.jpg";
 import Image from "next/image";
 import { heroData } from "./heroData";
 import uuid from "react-uuid";
