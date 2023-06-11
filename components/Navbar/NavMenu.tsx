@@ -5,11 +5,11 @@ import hamburger from "../../assets/icons/icon-hamburger.svg";
 import closeBtn from "../../assets/icons/icon-close.svg";
 import uuid from "react-uuid";
 import Image from "next/image";
+import { menuOptions } from "@/constants/constants";
+import Link from "next/link";
 
 const NavMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
-
-  const menuOptions = ["Portfolio", "About Us", "Contact"];
 
   const toggleMenu = () => setShowMenu(!showMenu);
   return (
@@ -21,12 +21,14 @@ const NavMenu = () => {
       >
         {menuOptions.map((option) => {
           return (
-            <p
-              key={uuid()}
-              className="font-bold text-center text-[18px] flex flex-col gap-4"
-            >
-              {option}
-            </p>
+            <Link href={option.route} onClick={toggleMenu}>
+              <p
+                key={uuid()}
+                className="font-bold text-center text-[20px] flex flex-col gap-4"
+              >
+                {option.name}
+              </p>
+            </Link>
           );
         })}
       </div>

@@ -8,8 +8,8 @@ type Props = {
 
 const ArrowButton = ({ text }: Props) => {
   return (
-    <div className="bg-[#1c1d22] w-fit p-4 flex items-center gap-4">
-      <p>{text}</p>
+    <div className="bg-black w-fit p-4 flex items-center gap-4">
+      <p className="text-white">{text}</p>
       <Image src={arrow} alt="" />
     </div>
   );

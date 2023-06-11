@@ -19,7 +19,7 @@
 } */
 
 * {
-  /* font-family: "Montserrat", sans-serif; */
+  font-size: 20px;
   transition: all 0.25s ease-in-out;
   scroll-behavior: smooth;
 }

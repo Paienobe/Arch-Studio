@@ -16,8 +16,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50 text-white">
         <div className="h-[88%] flex flex-col items-center justify-center">
           <div className="w-[80%] mx-auto p-4">
-            <h1 className="text-4xl font-bold mb-4">{heroData[0].title}</h1>
-            <p className="text-[18px] mb-4">{heroData[0].description}</p>
+            <h1 className="text-5xl font-bold mb-4">{heroData[0].title}</h1>
+            <p className="text-[20px] mb-4">{heroData[0].description}</p>
             <ArrowButton text="See Our Portfolio" />
           </div>
         </div>
@@ -28,13 +28,12 @@ const Hero = () => {
               <div
                 key={uuid()}
                 className={`text-[#1c1d22] w-1/4 flex items-center justify-center ${
-                  // isNotLastItem
-                  //   ? "border border-transparent border-r-[#7d828f] borde-r-opacity-30"
-                  //   : ""
-                  ""
+                  isNotLastItem
+                    ? "border border-transparent border-r-[#7d828f] border-opacity-30"
+                    : ""
                 }`}
               >
-                <p className="font-semibold text-[18px] text-[#535456]">
+                <p className="font-semibold text-[20px] text-[#535456]">
                   0{index + 1}
                 </p>
               </div>
