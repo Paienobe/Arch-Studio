@@ -4,11 +4,16 @@ import Image from "next/image";
 
 type Props = {
   text: string;
+  full?: boolean;
 };
 
-const ArrowButton = ({ text }: Props) => {
+const ArrowButton = ({ text, full }: Props) => {
   return (
-    <div className="bg-black w-fit p-4 flex items-center gap-4">
+    <div
+      className={`bg-black ${
+        full ? "w-full" : "w-fit"
+      } p-4 flex items-center justify-center gap-4`}
+    >
       <p className="text-white">{text}</p>
       <Image src={arrow} alt="" />
     </div>

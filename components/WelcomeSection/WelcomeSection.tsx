@@ -4,7 +4,7 @@ import uuid from "react-uuid";
 
 const WelcomeSection = () => {
   return (
-    <section className="p-4 py-[4rem] bg-white">
+    <section className="p-6 py-[4rem] bg-white">
       <h2 className="text-3xl font-bold pb-5">Welcome to Arch Studio</h2>
       {welcomeSectionParagraphs.map((item) => {
         return (

@@ -1,3 +1,4 @@
+import Featured from "@/components/Featured/Featured";
 import Hero from "@/components/Hero/Hero";
 import SmallTeam from "@/components/HomeAbout/SmallTeam";
 import WelcomeSection from "@/components/WelcomeSection/WelcomeSection";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WelcomeSection />
       <SmallTeam />
+      <Featured />
     </main>
   );
 }

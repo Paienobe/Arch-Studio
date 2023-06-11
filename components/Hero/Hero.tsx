@@ -15,7 +15,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 text-white">
         <div className="h-[88%] flex flex-col items-center justify-center">
-          <div className="w-[80%] mx-auto p-4">
+          <div className="w-[100%] mx-auto p-6">
             <h1 className="text-5xl font-bold mb-4">{heroData[0].title}</h1>
             <p className="text-[20px] mb-4">{heroData[0].description}</p>
             <ArrowButton text="See Our Portfolio" />
