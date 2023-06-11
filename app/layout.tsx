@@ -1,9 +1,9 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { League_Spartan } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = League_Spartan({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Arch Studio",

@@ -21,7 +21,10 @@ const NavMenu = () => {
       >
         {menuOptions.map((option) => {
           return (
-            <p key={uuid()} className="font-bold text-center">
+            <p
+              key={uuid()}
+              className="font-bold text-center text-[18px] flex flex-col gap-4"
+            >
               {option}
             </p>
           );
