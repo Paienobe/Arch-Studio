@@ -21,11 +21,8 @@ const NavMenu = () => {
       >
         {menuOptions.map((option) => {
           return (
-            <Link href={option.route} onClick={toggleMenu}>
-              <p
-                key={uuid()}
-                className="font-bold text-center text-[20px] flex flex-col gap-4"
-              >
+            <Link key={uuid()} href={option.route} onClick={toggleMenu}>
+              <p className="font-bold text-center text-[20px] flex flex-col gap-4">
                 {option.name}
               </p>
             </Link>

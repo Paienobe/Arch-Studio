@@ -18,10 +18,8 @@ const Footer = () => {
       <div className="p-4 flex flex-col gap-4 mt-[2.5rem]">
         {menuOptions.map((option) => {
           return (
-            <Link href={option.route}>
-              <p key={uuid()} className="font-bold">
-                {option.name}
-              </p>
+            <Link key={uuid()} href={option.route}>
+              <p className="font-bold">{option.name}</p>
             </Link>
           );
         })}
