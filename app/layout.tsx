@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import { League_Spartan } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
+import ToTopButton from "@/components/ToTopButton/ToTopButton";
 
 const inter = League_Spartan({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <ToTopButton />
         <Footer />
       </body>
     </html>
